@@ -34,7 +34,8 @@ class MonController extends AbstractController
     {
         $page = $repo->find($id);
         return $this->render('mon/sous_article.html.twig', [
-            'page' => $page
+            'page' => $page,
+            
         ] 
         );
     }
